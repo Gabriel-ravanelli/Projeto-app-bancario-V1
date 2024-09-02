@@ -36,14 +36,14 @@ while True:
         valor = float(input('Digite o valor de Deposito:'))# pergunto ao meu usuario O valor que ele deseja
 
         if valor > 0: #Primeira verificação feita, que no caso e perguntando se o 'valor' e maior que 0, assim evitando depositos de numero negativos. exp: -100
-            valor += saldo #O 'valor' sendo maior que 0 usamos '+=' para adicionar o valor informado a variavel 'saldo'
+            saldo += valor #O 'valor' sendo maior que 0 usamos '+=' para adicionar o valor informado a variavel 'saldo'
             extrato += f"Depóstio : R$ {valor: .2f}\n"#Logo apos adicionarmos o valor a variavel saldo,concatenamos o extrado e saldo, para adicionar o 'saldo' a 'extrato'
         
         else:
             print('Operação falhou! O valor informado e invalido') #caso nenhuma das opçoes acima seja atendida, ira retornar o print
     
     elif opcao == '2':
-        valor == float(input('Informe o valor de saque:'))# pergunto ao meu usuario O valor que ele deseja
+        valor = float(input('Informe o valor de saque:'))# pergunto ao meu usuario O valor que ele deseja
 
         excedeu_saldo = valor > saldo#Primeira verificação, se o saque excedeu o valor de saldo em conta
 
