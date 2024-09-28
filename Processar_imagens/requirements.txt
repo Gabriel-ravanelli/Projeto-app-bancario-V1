@@ -1,4 +1,0 @@
-requests
-numpy==1.21.0
-scikit-image==0.18.3
-matplotlib>=3.7
